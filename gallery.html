@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/gallery_style.css">
+    <title>The Fort</title>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Introduction</a>
+        <button class="dropdown-btn">Rooms
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="chill_room.html">The Chill Room</a>
+            <a href="entrance_way.html">Entrance Way</a>
+            <a href="lil_storage.html">Lil' Storage</a>
+          </div>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="img/drapes_entrance_way.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="100%">
+    </div>
+    <div class="column">
+      <img src="img/teddies_lil_storage.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" width="100%">
+    </div>
+    <div class="column">
+      <img src="img/stool_pillows_chill_room.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" width="100%">
+    </div>
+    <div class="column">
+      <img src="img/stuff_chill_room.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" width="100%">
+    </div>
+    <div class="column">
+        <img src="img/stuff_2_chill_room.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" width="100%">
+      </div>
+      <div class="column">
+        <img src="img/entrance_exterior.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" width="100%">
+      </div>
+      <div class="column">
+        <img src="img/blanket_chill_room.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" width="100%">
+      </div>
+      <div class="column">
+        <img src="img/entrance_exterior.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" width="100%">
+      </div>
+      <div class="column">
+        <img src="img/exterior_1.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" width="100%">
+      </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 9</div>
+        <img src="img/drapes_entrance_way.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+        <img src="img/teddies_lil_storage.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 9</div>
+        <img src="img/stool_pillows_chill_room.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 9</div>
+        <img src="img/stuff_chill_room.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="img/stuff_2_chill_room.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="img/entrance_entrance_way.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="img/blanket_chill_room.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="img/entrance_exterior.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="img/exterior_1.jpg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="img/drapes_entrance_way.jpg" onclick="currentSlide(1)" alt="Drapes" width="100%">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img/teddies_lil_storage.jpg" onclick="currentSlide(2)" alt="Teddies" width="100%">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img/stool_pillows_chill_room.jpg" onclick="currentSlide(3)" alt="Stool and Pillows" width="100%">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img/stuff_chill_room.jpg" onclick="currentSlide(4)" alt="Stuff" width="100%">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="img/stuff_2_chill_room.jpg" onclick="currentSlide(5)" alt="More Stuff" width="100%">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="img/entrance_entrance_way.jpg" onclick="currentSlide(6)" alt="Entrance Way" width="100%">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="img/blanket_chill_room.jpg" onclick="currentSlide(7)" alt="Blanket" width="100%">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="img/entrance_exterior.jpg" onclick="currentSlide(8)" alt="Entrance" width="100%">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="img/exterior_1.jpg" onclick="currentSlide(9)" alt="Exterior Side" width="100%">
+      </div>
+    </div>
+  </div>
+      </div>
+</body>
+<script src="js/main.js"></script>
+<script src="js/gallery.js"></script>
+</html>
+
